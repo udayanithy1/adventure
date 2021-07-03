@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>udaya parallax</title>
+	<link rel="stylesheet" type="text/css" href="css\style.css">
+</head>
+<body>
+<header id="header">
+	<a href="#" class="logo">Udaya's Adventure</a>
+	<ul>
+		<li><a href="#" class="active">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Destination</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+</header>
+<section>
+	<h2 id="text"><span>It's time for a new</span><br>Adventure</h2>
+	<img src="pic/bird1.png" id="bird1">
+		<img src="pic/bird2.png" id="bird2">
+			<img src="pic/forest.png" id="forest">
+	<a href="#" id="btn">Explore</a>
+	<img src="pic/rocks.png" id="rocks">
+	<img src="pic/water.png" id="water">
+</section>
+<div class="sec">
+  <h2>udaya's parallax scrolling effect</h2>
+  <p>There are different types of adventures in the world, there is an adventure for everyone and each adventure will have moments that will inspire you after the adventure is over. The importance of adventure sports is increasingly recognized in India from both an academic and social point of view.<br><br> 
+More and more students have become prisoners of their daily routine. Participation in a thrilling journey is a very powerful and effective way to achieve new levels of physical and mental well-being. There was a time when only a few students, who were fond of adventure activities like river rafting, were given special facilities.<br><br>
+But now regular programmers have been prepared in all the programs especially in schools so that the school is as much as possible. Where students and other youth take part in regularly engaging in sports by youngsters of youth, there is little and the tendency to engage in indiscipline and mischief is curbed. Adventure is doing anything first time, new, amazing or risky in the life with courage and excitement and without fear. My first day of school was adventure to me which gave me unforgettable experience. I always remember that event. I was so excited that how I would wake up in the early morning, get fresh, take bath, breakfast, and gets prepared for the school. My mother was also little bit worry about my first day to school as I was little bit naughty and lazy. She thought that how I would do everything at right time. At night, I went to my bedroom and closed the door. I still remember that I was not slept whole night.
+<br><br>
+I started wearing my the school dresses, shoes, hang my school bag to shoulder, take water bottle, my books, pencil box, and all thing which my mom brought for my school purpose. I was so excited that how I look in school dress, how I wear my socks and shoes, how I use my things in proper way and so many. Finally, night got over and it became morning with the nice sounds of birds in the sky. Sun was shining and sunlight was coming to me through window. My mom entered to my room, she tried to awake me by her lovely voice. Soon, I came out of my cover sheet and gave surprise to my mom. She was shocked and took me to prepare.<br><br>
+
+I went to my school with my mom in the school bus. I met there with friends and teachers. I was taken to the classroom by my class teacher and my mom was waiting outside in the garden like other moms. I was very silent in the classroom however I heard that my friends were weeping for their mother. My teacher closed the door and started showing us some interesting stories on the smart board. Everyone became happy. Then teacher asked introduction of everyone and told her name to us. She told us that we are good boy and we have come to school daily without missing our mom. She was talking so politely and treating everyone in very sweet manner. She told that when you all come to school daily I would tell you nice stories on daily basis. After two hours, school became off and we all<br><br> went to home with mom. It was the first time when my mom saw positive changes within me, she just said, you are a good boy.Adventure is doing anything first time, new, amazing or risky in the life with courage and excitement and without fear. My first day of school was adventure to me which gave me unforgettable experience. I always remember that event. I was so excited that how I would wake up in the early morning, get fresh, take bath, breakfast, and gets prepared for the school. My mother was also little bit worry about my first day to school as I was little bit naughty and lazy. She thought that how I would do everything at right time. At night, I went to my bedroom and closed the door. I still remember that I was not slept whole night.
+
+I started wearing my the school dresses, shoes, hang my school bag to shoulder, take water bottle, my books, pencil box, and all thing which my mom brought for my school purpose. I was so excited that how I look in school dress, how I wear my socks and shoes, how I use my things in proper way and so many. Finally, night got over and it became morning with the nice sounds of birds in the sky. Sun was shining and sunlight was coming to me through window. My mom entered to my room, she tried to awake me by her lovely voice. Soon, I came out of my cover sheet and gave surprise to my mom. She was shocked and took me to prepare.<br><br>
+
+I went to my school with my mom in the school bus. I met there with friends and teachers. I was taken to the classroom by my class teacher and my mom was waiting outside in the garden like other moms. I was very silent in the classroom however I heard that my friends were weeping for their mother. My teacher closed the door and started showing us some interesting stories on the smart board. Everyone became happy. Then teacher asked introduction of everyone and told her name to us.<br><br> She told us that we are good boy and we have come to school daily without missing our mom. She was talking so politely and treating everyone in very sweet manner. She told that when you all come to school daily I would tell you nice stories on daily basis. After two hours, school became off and we all went to home with mom. It was the first time when my mom saw positive changes within me, she just said, you are a good boy.
+ </p>	
+</div>
+<script type="text/javascript">
+	let text = document.getElementById('text');
+	let bird1 = document.getElementById('bird1');
+	let bird2 = document.getElementById('bird2');
+	let btn = document.getElementById('btn');
+	let rocks = document.getElementById('rocks');
+	let forest = document.getElementById('forest');
+	let water = document.getElementById('water');
+	let header = document.getElementById('header');
+	window.addEventListener('scroll',function () {
+		let value = window.scrollY;
+		text.style.top = 50 + value * -0.5 + '%';
+		bird1.style.top = value * -1.5 + 'px';
+		bird1.style.left = value * 2 + 'px';
+		bird2.style.top = value * -1.5 + 'px';
+		bird2.style.left = value * -5 + 'px';
+		btn.style.marginTop = value * 1.5 + 'px';
+		rocks.style.top = value * -0.12 + 'px';
+		forest.style.top = value * 0.25 + 'px';
+		header.style.top = value * 0.5 + 'px';
+	})
+</script>
+</body>
+</html>
